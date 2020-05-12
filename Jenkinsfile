@@ -6,7 +6,7 @@ stages
      stage('please print hello')
         { steps 
             {                  
-              sh 'echo hello'
+              sh 'echo Welcome to Jenkins'
             }
         }
   }
