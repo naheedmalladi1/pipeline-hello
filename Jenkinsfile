@@ -1,13 +1,10 @@
 pipeline
 {
-agent any
-stages
-  { 
-     stage('please print hello')
-        { steps 
-            {                  
-              sh 'echo Welcome to Jenkins'
-            }
+    agent any
+    stages
+    {
+        stage('scm checkout'){
+        git branch: 'master', url: 'https://github.com/wasim-sajan/maven-project'
         }
-  }
+    }
 }
